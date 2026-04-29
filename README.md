@@ -3,6 +3,7 @@ This repository contains a production-ready crypto market scanning engine built 
 
 
 🧠 Key Engineering Highlights
+
 ✔ Fault-tolerant API integration
 ✔ Cron-based automated execution
 ✔ Cooldown system to prevent signal spam
@@ -14,6 +15,7 @@ This repository contains a production-ready crypto market scanning engine built 
 
 
 🏗️ System Architecture
+
 Scheduler (cron)
      ↓
 Market Data Fetcher (CoinGecko API)
@@ -30,6 +32,7 @@ Logs + Trade Journal
 
 
 🔍 What the Scanner Does
+
 • Scans multiple assets (BTC, ETH, SOL)
 • Fetches real-time market data
 • Scores trades using:
@@ -49,6 +52,7 @@ Full scan summaries
 
 
 📊 Sample Signal Output
+
 ⚡ INSTITUTIONAL SIGNAL ⚡
 PAIR: BTC-USD
 DIRECTION: LONG
@@ -70,6 +74,7 @@ Signals are only generated when a minimum score threshold is met.
 
 
 🛡️ Reliability Features
+
 • API retry logic with exponential backoff
 • Graceful handling of rate limits & timeouts
 • Persistent cooldown state (JSON-based)
@@ -78,6 +83,7 @@ Signals are only generated when a minimum score threshold is met.
 
 
 ⚙️ Tech Stack
+
 Language: Python 3
 APIs: CoinGecko REST API
 Messaging: Telegram Bot API
@@ -87,6 +93,7 @@ Storage: JSON (cooldowns), CSV-ready
 
 
 🚀 How It Runs
+
 Deployed on a VPS
 Triggered automatically via cron
 Executes scan every cycle
@@ -95,6 +102,7 @@ Logs results for analysis
 
 
 📁 Project Structure
+
 scanner/
 ├── scanner.py        # Main scanning engine
 ├── cooldowns.json    # Persistent cooldown state
@@ -105,6 +113,7 @@ scanner/
 
 
 🧪 Testing & Iteration
+
 The design supports:
 
 Backtesting
@@ -116,11 +125,13 @@ This makes it suitable for continuous improvement workflows.
 
 
 ⚠️ Disclaimer
+
 This project is for educational and engineering demonstration purposes only.
 It does not constitute financial advice or a trading recommendation.
 
 
 👋 About the Author
+
 Built by a systems-focused engineer with interest in:
 
 Python backend development
