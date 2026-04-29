@@ -2,6 +2,7 @@
 This repository contains a production-ready crypto market scanning engine built in Python.  The system monitors major crypto assets, evaluates market conditions using multi-factor logic, and generates risk-managed trade signals delivered via Telegram — all while handling real-world issues like API rate limits, retries, cooldowns, and logging.
 
 
+
 🧠 Key Engineering Highlights
 
 ✔ Fault-tolerant API integration
@@ -12,6 +13,7 @@ This repository contains a production-ready crypto market scanning engine built 
 ✔ Trade level generation (Entry / SL / TP1 / TP2)
 ✔ Telegram messaging (signals + summaries)
 ✔ CSV-ready architecture for analytics & backtesting
+
 
 
 🏗️ System Architecture
@@ -29,6 +31,7 @@ Cooldown Manager
 Telegram Notification System
      ↓
 Logs + Trade Journal
+
 
 
 🔍 What the Scanner Does
@@ -49,6 +52,7 @@ Failed API fetches
 Trade signals
 No-trade explanations
 Full scan summaries
+
 
 
 📊 Sample Signal Output
@@ -73,6 +77,7 @@ Total Possible	14
 Signals are only generated when a minimum score threshold is met.
 
 
+
 🛡️ Reliability Features
 
 • API retry logic with exponential backoff
@@ -80,6 +85,7 @@ Signals are only generated when a minimum score threshold is met.
 • Persistent cooldown state (JSON-based)
 • Crash-safe execution
 • Structured logging with timestamps
+
 
 
 ⚙️ Tech Stack
@@ -92,6 +98,7 @@ Logging: Python logging module
 Storage: JSON (cooldowns), CSV-ready
 
 
+
 🚀 How It Runs
 
 Deployed on a VPS
@@ -99,6 +106,7 @@ Triggered automatically via cron
 Executes scan every cycle
 Sends alerts to Telegram
 Logs results for analysis
+
 
 
 📁 Project Structure
@@ -110,6 +118,7 @@ scanner/
 ├── backtester.py     # (Optional) Backtesting module
 ├── tester.py         # Strategy testing utilities
 └── README.md
+
 
 
 🧪 Testing & Iteration
@@ -124,10 +133,12 @@ Strategy iteration
 This makes it suitable for continuous improvement workflows.
 
 
+
 ⚠️ Disclaimer
 
 This project is for educational and engineering demonstration purposes only.
 It does not constitute financial advice or a trading recommendation.
+
 
 
 👋 About the Author
